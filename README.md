@@ -1,7 +1,7 @@
 # st - simple terminal
 st is a simple terminal emulator for X which sucks less.
 
-![Screeshot](sceenshots/1.png?raw=true "Screenshot 1")
+![Screeshot](screenshots/1.png?raw=true "Screenshot 1")
 
 ## Features
 This is a custom build of `git clone https://git.suckless.org/st` preloaded with few patches really necessary for regular use.
