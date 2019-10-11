@@ -1,0 +1,9 @@
+diff a/st.h b/st.h	(rejected hunks)
+--- a/st.h
++++ b/st.h
+@@ -120,4 +120,5 @@ extern char *termname;
+ extern unsigned int tabspaces;
+ extern unsigned int defaultfg;
+ extern unsigned int defaultbg;
+ extern MouseKey mkeys[];
++extern float alpha;
