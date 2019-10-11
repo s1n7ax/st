@@ -21,10 +21,7 @@ Patches:
 
 ## Requirements
 In order to build st you need,
-```
-```
-
-In Ubuntu, install following.
+(Ubuntu)
 ```
 sudo apt install make gcc build-essential libx11-dev libxft-dev fonts-fantasque-sans
 ```
