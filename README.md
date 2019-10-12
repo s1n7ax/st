@@ -22,6 +22,9 @@ Patches:
 	* use `mouse` scroll or `shift+page up/down`
 * st-font2
 	* this helps visualizing some components when unavailable fonts are present in current font 
+* st-desktopentry
+	* add desktop entry file at installation
+	* st will show up in application menu waiting for you to launch
 
 ## Requirements
 In order to build st you need,
