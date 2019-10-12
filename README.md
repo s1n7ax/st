@@ -45,6 +45,9 @@ sudo make clean install
 ```
 
 ## Running st
+Installed using `make clean install`?
+Go to the application menu and search for `st` or run `st` in your command runner.
+
 If you did not install st with make clean install, you must compile
 the st terminfo entry with the following command:
 
@@ -56,5 +59,3 @@ See the man page for additional details.
 
 ## Credits
 Based on Aurélien APTEL <aurelien dot aptel at gmail dot com> bt source code.
-
-
