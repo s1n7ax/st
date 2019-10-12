@@ -20,6 +20,8 @@ Patches:
 * st-scrollback-mouse-altscreen
 	* scroll back through the logs
 	* use `mouse` scroll or `shift+page up/down`
+* st-font2
+	* this helps visualizing some components when unavailable fonts are present in current font 
 
 ## Requirements
 In order to build st you need,
