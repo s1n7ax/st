@@ -176,16 +176,14 @@ static uint forcemousemod = ShiftMask;
  * Beware that overloading Button1 will disable the selection.
  */
 static MouseShortcut mshortcuts[] = {
-	/* mask                 button   function        argument       release */
-	{ XK_ANY_MOD,           Button2, selpaste,       {.i = 0},      1 },
-	{ XK_ANY_MOD,           Button4, ttysend,        {.s = "\031"} },
-	{ XK_ANY_MOD,           Button5, ttysend,        {.s = "\005"} },
-};
-
-MouseKey mkeys[] = {
-	/* button               mask            function        argument */
-	{ Button4,              XK_NO_MOD,      kscrollup,      {.i =  1} },
-	{ Button5,              XK_NO_MOD,      kscrolldown,    {.i =  1} },
+	/* mask                 button   function        	argument       release */
+	{ XK_ANY_MOD,           Button2, selpaste,       	{.i = 0},      1 },
+	// following doesn't work. check below link for more information
+	// https://www.reddit.com/r/suckless/comments/ftaoq5/mouseshortcut_mask_doesnt_work_st/
+	// { ShiftMask,           Button4, kscrollup,        	{.i =  1}, 1 },
+	// { ShiftMask,           Button5, kscrolldown,      	{.i =  1}, 1 },
+	{ XK_ANY_MOD,           Button4, kscrollup,        	{.i =  10} },
+	{ XK_ANY_MOD,           Button5, kscrolldown,      	{.i =  10} },
 };
 
 /* Internal keyboard shortcuts. */
