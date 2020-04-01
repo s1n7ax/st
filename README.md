@@ -25,6 +25,8 @@ Patches:
 * st-desktopentry
 	* add desktop entry file at installation
 	* st will show up in application menu waiting for you to launch
+* st-xresources
+	* This patch adds the ability to configure st via Xresources
 
 ## Requirements
 In order to build st you need,
