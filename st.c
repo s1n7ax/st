@@ -2710,9 +2710,16 @@ draw(void)
 		cx--;
 
 	drawregion(0, 0, term.col, term.row);
+	// Draw current line to format ligatures properly.
+	xdrawline(term.line[term.c.y], 0, term.c.y, term.col);
+
 	if (term.scr == 0)
 		xdrawcursor(cx, term.c.y, term.line[term.c.y][cx],
 				term.ocx, term.ocy, term.line[term.ocy][term.ocx]);
+	// If cursor was on a transformed glyph, we need to redraw the previous line
+	if (term.ocy != term.c.y && (term.line[term.ocy][term.ocx].mode & ATTR_LIGA))
+		xdrawline(term.line[term.ocy], 0, term.ocy, term.col);
+
 	term.ocx = cx, term.ocy = term.c.y;
 	xfinishdraw();
 	xximspot(term.ocx, term.ocy);

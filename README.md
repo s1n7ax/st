@@ -27,6 +27,8 @@ Patches:
 	* st will show up in application menu waiting for you to launch
 * st-xresources
 	* This patch adds the ability to configure st via Xresources
+* st-ligatures
+	* Adds proper drawing of ligatures
 
 ## Requirements
 In order to build st you need,
