@@ -795,7 +795,7 @@ static Key key[] = {
 	{ XK_Delete,       Mod1Mask|ControlMask,           "\033[255;7u", 0,  0},
 	{ XK_Delete,       Mod1Mask|ControlMask|ShiftMask, "\033[255;8u", 0,  0},
 	{ XK_Delete,       Mod1Mask|ShiftMask,             "\033[255;4u", 0,  0},
-	{ XK_i,            ControlMask,                    "\033[105;5u", 0,  0},
+	{ XK_i,            ControlMask,                    "\033[105;3u", 0,  0},
 	{ XK_i,            Mod1Mask|ControlMask,           "\033[105;7u", 0,  0},
 	{ XK_m,            ControlMask,                    "\033[109;5u", 0,  0},
 	{ XK_m,            Mod1Mask|ControlMask,           "\033[109;7u", 0,  0},
